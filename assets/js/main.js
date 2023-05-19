@@ -242,6 +242,15 @@
   });
 
   /**
+   * Order button opening modal
+   */
+  const orderModal = document.querySelector(".order_modal");
+  document.querySelector(".order_btn").addEventListener("click", function (e) {
+    e.preventDefault();
+    orderModal.classList.toggle("hide");
+  });
+
+  /**
    * Animation on scroll
    */
   window.addEventListener("load", () => {
